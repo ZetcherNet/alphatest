@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Extension 16.05</title>
+</head>
+<body onload="js(-1)">
+    <header>
+        <div class="top">
+            <div class="wrap">
+                <div class="logo">
+                    <a class="acc" href="">
+                        <img src="./assets/logo_small.png" alt="MINECRAFT">
+                    </a>
+                </div>
+                <div class="subtitle">
+                    <p>Extension 16.05</p>
+                </div>
+                <div class="account">
+                    <div id="identity">
+                        <p class="acc">[Guest]</p>
+                    </div>
+                    <div id="anonymous">
+                        <a class="acc" href="">[Login]</a>
+                        <a class="acc" href="">[Register]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div id="menu">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <br><br>
+            <p>Log in with your Minecraft Playtester ID.</p>
+            <br>
+            <div class="container login">
+                <div id="connecting" style="display:block;">
+                    <p id="connext">Connecting...</p>
+                </div>
+                <div id="success" style="display:none;">
+                    <div id="login-screen" style="display:block;">
+                        <p>Playtester ID: <input id="i1" size="4" maxlength="4"></input>-<input id="i2" size="4" maxlength="4"></input></p>
+                        <p>Password: <input id="i3"></input></p>
+                        <br>
+                        <button onclick="playtesterAuth()">Login</button>
+                        <p id="login-error" style="color:red;"></p>
+                    </div>
+                    <div id="login-process" style="display:none;">
+                        <p id="loggext">Logging in...</p>
+                    </div>
+                </div>
+                <div id="failed" style="display:none;">
+                    <p>Unable to connect to main servers.</p>
+                    <p>Try refreshing the page.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="revision">
+            <p>rev20</p>
+            <pre style="font-family: monospace;"> ▄ ▄ ▄<br> █▄▄▄█</pre>
+        </div>
+        <div class="copyright">
+            <p>©Zetcher | ©Devoid | Not affiliated with Mojang or Microsoft</p>
+        </div>
+    </footer>
+</body>
+</html>

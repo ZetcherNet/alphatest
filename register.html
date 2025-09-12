@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            color: black;
+            text-shadow: none;
+            font-family: ＭＳ Ｐゴシック;
+        }
+        body {
+            background-image: none;
+            background-color: #2e3444;
+        }
+    </style>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Extension 16.05</title>
+</head>
+<body onload="js()">
+    <header>
+        <div style="display:none;">
+            <div class="top">
+                <div class="wrap">
+                    <div class="logo">
+                        <a class="acc" href="">
+                            <img src="./assets/logo_small.png" alt="MINECRAFT">
+                        </a>
+                    </div>
+                    <div class="subtitle">
+                        <p>Extension 16.05</p>
+                    </div>
+                    <div class="account">
+                        <div id="identity">
+                            <p class="acc">[Guest]</p>
+                        </div>
+                        <div id="anonymous">
+                            <a class="acc" href="">[Login]</a>
+                            <a class="acc" href="">[Register]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div id="menu">
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <br>
+            <img src="./assets/important.png" alt="REGISTER">
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <br>
+            <div style="background-color:white;border:2px solid black;">
+                <code>
+                    <b>
+                    <p>Terms and Conditions</p>
+                    <p>===========================</p>
+                    <br>
+                    <p>To register for QA testing for Minecraft Alpha, you must acknowledge and agree to the following conditions.</p>
+                    <br>
+                    <br>
+                    <p>A.) You will not redistribute any releases granted to you via this website in any way, shape, or form.</p>
+                    <br>
+                    <p>B.) You will not post screenshots or discussions about any of these releases onto any website, forum, or IRC in any capacity, screenshots should be confined to strictly our website's bugtracker page.</p>
+                    <br>
+                    <p>C.) You will not modify the contents of these releases whatsoever.</p>
+                    <br>
+                    <p>D.) You will not engage with any exploits with the intent to disturb other players or make multiplayer servers unusable.</p>
+                    <br>
+                    <p>E.) You will not impersonate any developer associated with these releases.</p>
+                    <br>
+                    <p>F.) You will not post spam or other irrelevant content on our bugtracker page if it does not relate to any bugs.</p>
+                    <br>
+                    <br>
+                    <p>If you agree with everything listed above, please input your username to be used/displayed in Minecraft Alpha below.</p>
+                    <p style="color:red;">Breaking any of these after registering will result in the termination of your access to this website and its releases.</p>
+                    </b>
+                </code>
+            </div>
+            <br>
+            <br>
+            <b><p style="color:white;text-shadow:3px 3px black;">Username: <input id="username" style="color:black;cursor:text;"></input></p></b>
+            <p id="error" style="color:white;"></p>
+            <br>
+            <button style="cursor:pointer;" onclick="registerQA()">I agree to the terms and conditions.</button>
+            <br>
+            <br>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <div class="revision">
+            <p style="font-family:'ext1605';">rev20</p>
+            <pre style="font-family: monospace;"> ▄ ▄ ▄<br> █▄▄▄█</pre>
+        </div>
+        <div class="copyright">
+            <p>©Zetcher | ©Devoid | Not affiliated with Mojang or Microsoft</p>
+        </div>
+    </footer>
+</body>
+</html>
