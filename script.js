@@ -1,5 +1,5 @@
 const www = {
-    "domain":"http://localhost:3000/alphatest/",
+    "domain":"https://zetcher.net/alphatest/",
     "page":{
         "login":"login",
         "register":"register",
@@ -257,4 +257,5 @@ function qaKeyGen(name) {
     retStr = retStr.slice(0, 31) + "-" + retStr.slice(31);
     retStr = retStr.slice(0, 36) + "-" + retStr.slice(36);
     return retStr;
+
 };
