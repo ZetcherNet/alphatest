@@ -1,5 +1,5 @@
 const www = {
-    "domain":"https://zetcher.net/alphatest/",
+    "domain":"http://localhost:3000/alphatest/",
     "page":{
         "login":"login",
         "register":"register",
@@ -15,6 +15,7 @@ function js(x) {
     auth();
     headerDisplay(x);
     switch(x) {
+        case -3: lilypadQaPage(); break;
         case -1: login(); break;
         case 0: mainPage(); break;
         case 1: versionList(); break
@@ -57,30 +58,37 @@ function versionList() {
         "Registration Required",
         "Playtester ID Required"
     ];
+    let c = 0
     for (let i = 0; i < list.length; i++) {
+        if (security >= list[i].lock) c++;
         let a = document.createElement("a");
         a.style.textDecoration = "none";
         a.href = www.domain+www.page.downloads+list[i].page;
-        let af = document.createElement("p");
         let div = document.createElement("div");
+        div.className = "version-list-bg"
         div.style.backgroundImage = security >= list[i].lock ? "url('../assets/top-bg.png')" : "url('../assets/nav-bg.png')";
-        div.style.backgroundSize = "auto 100%";
         let h2 = document.createElement("h2");
         h2.innerHTML = list[i].name;
+        h2.className = "version-list"
         h2.style.textAlign = "left";
-        h2.style.cursor = security >= list[i].lock ? "pointer" : "not-allowed";
         let p = document.createElement("p");
         p.innerHTML = req[list[i].lock];
+        p.className = "version-list"
         p.style.textAlign = "right";
-        p.style.cursor = security >= list[i].lock ? "pointer" : "not-allowed";
         div.appendChild(h2);
         div.appendChild(p);
-        security >= list[i].lock ? a.appendChild(div) : af.appendChild(div);
-        let l = document.getElementById("list");
-        security >= list[i].lock ? l.appendChild(a) : l.appendChild(af);
-        l.appendChild(document.createElement("br"));
+        a.appendChild(div);
+        if (security != 0 || list[i].lock == 0) {
+            document.getElementById("list").appendChild(a);
+            document.getElementById("list").appendChild(document.createElement("br"));
+        };
     };
+    document.getElementById("count").innerHTML = c;
+    if (c > 1 || c < 1) document.getElementById("s").innerHTML = "s";
     document.getElementById("list").style.display = "block";
+};
+function lilypadQaPage() {
+    document.getElementById("key").innerHTML = profile.qaKey;
 };
 function mainPage() {
     profile.registered ? document.getElementById("accountViewers").style.display = "block" : document.getElementById("anonViewers").style.display = "block";
@@ -88,6 +96,7 @@ function mainPage() {
     a[0].href = www.domain+www.page.login;
     a[1].href = www.domain+www.page.register;
     a[2].href = "./download/101605_preview";
+    a[3].href = www.domain+www.page.downloads;
 };
 function login() {
     let c = [
@@ -151,6 +160,7 @@ function headerDisplay(x) {
     let a = document.querySelectorAll(".acc");
     a[0].href = www.domain;
     a[1].innerHTML = "[" + profile.username + "]";
+    a[1].href = www.domain+www.page.profile;
     a[2].href = www.domain+www.page.login;
     a[3].href = www.domain+www.page.register;
     profile.registered ? document.getElementById("identity").style.display = "block" : document.getElementById("anonymous").style.display = "block";

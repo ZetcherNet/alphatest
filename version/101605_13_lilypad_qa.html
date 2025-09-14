@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Extension 16.05</title>
 </head>
-<body onload="js()">
+<body onload="js(-3)">
     <header>
         <div class="top">
             <div class="wrap">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="account">
                     <div id="identity">
-                        <p class="acc">[Guest]</p>
+                        <a class="acc" href="">[Guest]</a>
                     </div>
                     <div id="anonymous">
                         <a class="acc" href="">[Login]</a>
@@ -40,25 +40,15 @@
     <main>
         <div class="wrap left">
             <br><br>
-            <div class="banner">
+            <div class="version-banner">
                 <h1>Minecraft Alpha Version 1.0.16.05_13 Lilypad QA</h1>
                 <br>
+                <p>Build date: undefined</p>
             </div>
             <br><br>
-            <h3>This is a QA build for Lilypad, report any bugs on our <a>bug tracker</a>, below is a preview for list of changes to be displayed for its final release.</h3>
+            <h3>This is a QA build for Lilypad, report any bugs on our <a href="../bugtracker/">bug tracker</a>.</h3>
             <br>
-            <h3>Changes in this version</h3>
-            <br>
-            <ul>
-                <li><a href="">List of texture changes</a></li>
-                <li>Added a Hunger Bar and sprint function</li>
-                <li>Each chunk now has its own designated region-name</li>
-                <li>Numerous new items and blocks added</li>
-                <li>Added Giants, our first proper bosses</li>
-                <li>Gave our night skies a fresh layer of paint</li>
-                <li>New music by [5]</li>
-                <li>Other minor fixes listed <a href="">here</a></li>
-            </ul>
+            <p>Your QA key: <span id="key"></span></p>
             <br><br>
             <h3>Reminder: this version is not to be disclosed; any recordings and/or screenshots outside of the bug tracker are prohibited.</h3>
             <br><br>
@@ -66,13 +56,8 @@
         </div>
     </main>
     <footer>
-        <div class="revision">
-            <p>rev20</p>
-            <pre style="font-family: monospace;"> ▄ ▄ ▄<br> █▄▄▄█</pre>
-        </div>
-        <div class="copyright">
-            <p>©Zetcher | ©Devoid | Not affiliated with Mojang or Microsoft</p>
-        </div>
+        <div class="revision">rev20<br><pre style="font-family:monospace;">▄ ▄ ▄<br>█▄▄▄█</pre></div>
+        <div class="copyright">©Zetcher | ©Devoid<br>Not affiliated with Mojang or Microsoft</div>
     </footer>
 </body>
 </html>

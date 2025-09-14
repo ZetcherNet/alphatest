@@ -76,24 +76,101 @@ body {
 }
 main {
     text-align: center;
-    max-width: 1000px;
     margin: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
 }
 footer * {
     color: #a0a0a040;
 }
 .revision {
+    text-align: center;
     position: fixed;
     bottom: 0;
 }
 .copyright {
+    text-align: center;
+    font-family: ＭＳ Ｐゴシック;
+    font-size: small;
     position: fixed;
     bottom: 0;
     right: 0;
 }
-.copyright * {
-    font-family: ＭＳ Ｐゴシック;
-    font-size: small;
+
+.l {
+    text-align: left;
+}
+.r {
+    text-align: right;
+}
+.c {
+    text-align: center;
+}
+
+.index-table {
+    width: 100%;
+}
+.index-left {
+    display: inline-block;
+    width: 60%;
+}
+.index-left video {
+    width: 100%;
+}
+.index-right {
+    display: inline-block;
+    width: 35%;
+}
+.index-right img {
+    width: 100%;
+}
+.index-right button {
+    font-size: 32px;
+    background-color: #006a;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 4px;
+    outline: 2px solid black;
+    box-shadow: 2px 2px inset black, -2px -2px inset black;
+}
+.index-right button:hover {
+    color: #ff6;
+    background-color: #004040bf;
+    border-top: 2px solid lightblue;
+    border-left: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+    cursor: pointer;
+}
+.index-promo-big {
+    display: inline;
+}
+.index-promo {
+    display: inline;
+    font-size: 14px;
+}
+.index-promo-img {
+    display: block;
+    max-width: 100%
+}
+
+.version-list-bg {
+    padding: 4px;
+    background-size: auto 100%;
+}
+.version-list {
+    text-shadow: none;
+    cursor: pointer;
+}
+.version-banner {
+    background-image: url("./assets/top-bg.png");
+    background-size: auto 100%;
+    padding: 8px;
+}
+.version-banner h1, .version-banner p {
+    text-shadow: none;
 }
 
 .container {
@@ -125,9 +202,4 @@ footer * {
     border-bottom: 2px solid lightblue;
     border-right: 2px solid lightblue;
     cursor: pointer;
-}
-.banner {
-    background-image: url("./assets/top-bg.png");
-    background-size: auto 100%;
-    padding: 8px;
 }
