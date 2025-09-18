@@ -1,0 +1,62 @@
+:root {
+    --account-status: red;
+}
+.container {
+    text-align: center;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+.profile-box {
+    text-align: left;
+    width: 75%;
+    margin: auto;
+    background-color: #000000B0;
+    padding: 25px;
+}
+.set-qa {
+    font-style: italic;
+    color: #FFFFFFB0;
+}
+.acc-status {
+    color: var(--account-status)
+}
+.why {
+    cursor: help;
+}
+.profile-box button {
+    background-color: #006a;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    padding-left: 4px;
+    padding-right: 4px;
+    outline: 2px solid black;
+    box-shadow: 2px 2px inset black, -2px -2px inset black;
+}
+.profile-box button:hover {
+    color: #ff6;
+    background-color: #004040bf;
+    border-top: 2px solid lightblue;
+    border-left: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+    cursor: pointer;
+}
+input {
+    color: black;
+    cursor: text;
+    text-shadow: none;
+}
+.error-text {
+    color: red;
+}
+.delete-data {
+    text-align: center;
+}
+.delete-data p {
+    font-size: 8px;
+    text-decoration: underline;
+    color: #FFFFFFB0;
+}

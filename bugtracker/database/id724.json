@@ -1,0 +1,56 @@
+{
+    "report":"#0724",
+    "title":"Music doesnt play right",
+    "author":"20bc-308d",
+    "status":"uid",
+    "viewable":true,
+    "page":{
+        "status":"Closed [wontfix]",
+        "information":"Idk(i don't know) how to explain it but music plays completely wrong, like its playing at a wrong pitch or in reverse or something",
+        "attachments":[
+            {
+                "youtube":false,
+                "file":"724.txt",
+                "name":"log.txt",
+                "size":"1.33KB"
+            }
+        ],
+        "comments":[
+            {
+                "poster":"0000-0000 [dev]",
+                "status":"uid",
+                "post":"set status to Closed [wontfix]"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"set status to Accepted"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: pulseaudio related maybe?"
+            },
+            {
+                "poster":"0000-0000 [dev]",
+                "status":"uid",
+                "post":"set status to Closed [wontfix]"
+            },
+            {
+                "poster":"0000-0000 [dev]",
+                "status":"uid",
+                "post":"says: You're running an unsupported operating system"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: weird"
+            },
+            {
+                "poster":"20bc-308d",
+                "status":"uid",
+                "post":"thread created"
+            }
+        ]
+    }
+}

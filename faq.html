@@ -3,69 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <script src="./global.js"></script>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./faq.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Extension 16.05</title>
 </head>
-<body onload="js(2)">
+<body onload="auth();">
     <header>
-        <div class="top">
-            <div class="wrap">
-                <div class="logo">
-                    <a class="acc" href="">
-                        <img src="./assets/logo_small.png" alt="MINECRAFT">
-                    </a>
-                </div>
-                <div class="subtitle">
-                    <p>Extension 16.05</p>
-                </div>
-                <div class="account">
-                    <div id="identity">
-                        <a class="acc" href="">[Guest]</a>
-                    </div>
-                    <div id="anonymous">
-                        <a class="acc" href="">[Login]</a>
-                        <a class="acc" href="">[Register]</a>
-                    </div>
-                </div>
+        <hgroup>
+            <a href="./"><img class="site-logo" src="./assets/logo_small.png" alt="MINECRAFT"></a>
+            <div class="site-buttons">
+                <a target="_blank" href="./redirect/refactored"><img src="https://placehold.co/88x31.png" title="Check out Refactored!" alt="Refactored" width="88" height="31"></a>
+                <a target="_blank" href="./redirect/discord"><img src="./assets/88x31_discord.png" title="Join our Discord Server" alt="Discord Server" width="88" height="31"></a>
+                <a target="_blank" href="https://alphaver.neocities.org"><img src="./assets/88x31_communityhub.png" title="Visit our Sister Site" alt="Community Hub" width="88" height="31"></a>
+                <a target="_blank" href="https://zetcher.net"><img src="./assets/88x31_zetchernet.png" title="Hosted by ZetcherNet" alt="zetcher.net" width="88" height="31"></a>
             </div>
-        </div>
-        <div class="wrap">
-            <div id="menu">
-            </div>
-        </div>
+        </hgroup>
+        <nav>
+            <div class="site-subtitle"><a href="./">Extension 16.05</a></div>
+            <a href="./about">About</a>
+            <a href="./profile" class="site-profile">Profile</a>
+            <a href="./releases">Releases</a>
+            <a href="./decraft">Launcher</a>
+            <a href="./bugtracker">Bugtracker</a>
+            <p>FAQ</p>
+            <a href="./lilypedia">Wiki</a>
+        </nav>
     </header>
     <main>
-        <div class="wrap">
-            <br><br>
-            <h1>FAQ</h1>
+        <div class="container">
             <p>A list of Frequently Asked Questions (FAQ) has been provided below for new or confused players.</p>
-            <br><br><br>
-            <h3>Q: What is 16.05?</h3>
-            <i><p style="color:#FFFFFFA0;text-decoration:underline;">A: 16.05 is an official total conversion modification of Minecraft Alpha 1.0_16.05. It is where ideas that don't get implemented into the main branch end up.</p></i>
-            <br><br>
-            <h3>Q: What was the point of "recruitment"?</h3>
-            <i><p style="color:#FFFFFFA0;text-decoration:underline;">A: The way [0] went around deploying this was a bit of a social experiment. We wanted to see what people would do and if they would even notice that they're divided across two different versions.</p></i>
-            <br><br>
-            <h3>Q: What is the point of 16.05?</h3>
-            <i><p style="color:#FFFFFFA0;text-decoration:underline;">A: 16.05 relies heavily on online play. This is not something the creators of the original branch want, so the code to experiment with this was branched off to our team.</p></i>
-            <br><br>
-            <h3>Q: What platforms is Minecraft available on?</h3>
-            <i><p style="color:#FFFFFFA0;text-decoration:underline;">A: Currently, we support Windows Vista and above. There are no official downloads for Apple and Linux systems yet.</p></i>
-            <br><br>
-            <h3>Q: What is the Hub?</h3>
-            <i><p style="color:#FFFFFFA0;text-decoration:underline;">A: The Hub is an area that allows you to see other players. You can enter into other players' worlds through this. Do make sure to behave yourselves and not have too much fun with their worlds. As for how to access this? You will have to find out yourself…</p></i>
-            <br><br>
-            <h3>Q: How do I report a bug?</h3>
-            <i><p style="color:#FFFFFFA0;text-decoration:underline;">A: Report any issues here at our official bug tracker.</p></i>
-            <br><br>
-            <h3>Q: When will the next update be released?</h3>
-            <i><p style="color:#FFFFFFA0;text-decoration:underline;">A: When it is ready.</p></i>
+            <div class="section">
+                <p class="q">Q: What is 16.05?</p>
+                <p class="a">A: 16.05 is an official total conversion modification of Minecraft Alpha 1.0_16.05. It is where ideas that don't get implemented into the main branch end up.</p>
+            </div>
+            <div class="section">
+                <p class="q">Q: What was the point of "recruitment"?</p>
+                <p class="a">A: The way [0] went around deploying this was a bit of a social experiment. We wanted to see what people would do and if they would even notice that they're divided across two different versions.</p>
+            </div>
+            <div class="section">
+                <p class="q">Q: What is the point of 16.05?</p>
+                <p class="a">A: 16.05 relies heavily on online play. This is not something the creators of the original branch want, so the code to experiment with this was branched off to our team.</p>
+            </div>
+            <div class="section">
+                <p class="q">Q: What platforms is Minecraft available on?</p>
+                <p class="a">A: Currently, we support Windows Vista and above. There are no official downloads for Apple and Linux systems yet.</p>
+            </div>
+            <div class="section">
+                <p class="q">Q: What is the Hub?</p>
+                <p class="a">A: The Hub is an area that allows you to see other players. You can enter into other players' worlds through this. Do make sure to behave yourselves and not have too much fun with their worlds. As for how to access this? You will have to find out yourself…</p>
+            </div>
+            <div class="section">
+                <p class="q">Q: How do I report a bug?</p>
+                <p class="a">A: Report any issues here at our official bug tracker.</p>
+            </div>
+            <div class="section">
+                <p class="q">Q: When will the next update be released?</p>
+                <p class="a">A: When it is ready.</p>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="revision">rev20<br><pre style="font-family:monospace;">▄ ▄ ▄<br>█▄▄▄█</pre></div>
+        <div class="revision">rev20<br><pre>🬓🬹🬦<br>🬲🬰🬷</pre></div>
         <div class="copyright">©Zetcher | ©Devoid<br>Not affiliated with Mojang or Microsoft</div>
     </footer>
 </body>

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "ext1605";
+    src: url("./assets/ext1605.woff");
+}
+@font-face {
+    font-family: "revision";
+    src: url("./assets/revision.woff");
+}
+:root {
+    --site-logo-width: 270px;
+    --site-profile-registered: orange;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "ext1605";
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    text-shadow: 3px 3px black;
+    cursor: default;
+}
+a {
+    cursor: pointer;
+}
+body {
+    background-image: url("./assets/bg.png");
+}
+hgroup {
+    height: 48px;
+    background-color: #555;
+    background-image: url("./assets/top-bg.png");
+    background-size: auto 100%;
+    border-bottom: 3px solid #000;
+}
+.hgroup * {
+    display: inline;
+}
+.site-logo {
+    width: var(--site-logo-width);
+    cursor: pointer;
+}
+.site-buttons {
+    float: right;
+}
+.site-buttons * {
+    margin-top: 9px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+nav {
+    background-image: url("./assets/nav-bg.png");
+    box-shadow: 0 -4px 8px black inset;
+    border-bottom: 2px solid #000;
+}
+nav * {
+    display: inline;
+    text-shadow: none;
+}
+nav a {
+    color: orange;
+}
+.site-subtitle {
+    display: inline-block;
+    text-align: center;
+    width: var(--site-logo-width);
+}
+.site-subtitle a {
+    color: white;
+    text-decoration: none;
+}
+.site-profile {
+    color: var(--site-profile-registered);
+}
+footer * {
+    font-family: ＭＳ Ｐゴシック;
+    color: #a0a0a040;
+    text-align: center;
+}
+.revision {
+    position: fixed;
+    bottom: 0;
+}
+.revision pre {
+    font-family: "revision";
+}
+.copyright {
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (orientation: portrait) {
+    :root {
+        --site-logo-width: 100%;
+    }
+    hgroup {
+        height: calc(100% / 5.4);
+    }
+    .site-buttons {
+        display: none;
+    }
+    nav {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .site-buttons {
+        display: none;
+    }
+}

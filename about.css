@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "zetchernet";
+    src: url("./assets/zetchernet.woff");
+}
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    text-align: center;
+}
+.ztn {
+    font-family: "zetchernet";
+    vertical-align: top;
+}

@@ -1,0 +1,46 @@
+{
+    "report":"#0722",
+    "title":"Hub Door spawns in illegal location",
+    "author":"0000-0001 [dev]",
+    "status":"uid",
+    "viewable":true,
+    "page":{
+        "status":"Resolved",
+        "information":"Hub Door spawns in illegal location",
+        "attachments":[
+            
+        ],
+        "comments":[
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"says: status to Resolved"
+            },
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"set Whatever, this seems to prevent them from spawning underwater"
+            },
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"says: Why does he even tell us to keep this legacy code? Normal players can't even get there during gameplay"
+            },
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"says: Let's see if this fixes it."
+            },
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"says: That recent patch should've solved the Hub flooding issue, right?"
+            },
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"thread created"
+            }
+        ]
+    }
+}

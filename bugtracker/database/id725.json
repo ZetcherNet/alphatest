@@ -1,0 +1,51 @@
+{
+    "report":"#0725",
+    "title":"falling below bedrock BROKE MY WORLD!!!",
+    "author":"531a-9390",
+    "status":"uid",
+    "viewable":true,
+    "page":{
+        "status":"Closed [wontfix]",
+        "information":"i mined bedrock using the obsidian pickaxe and dropped through the world into the void, minecraft crashes and then i cant load up the world anymore :( PLS FIX!!!!",
+        "attachments":[
+            
+        ],
+        "comments":[
+            {
+                "poster":"0000-0004 [dev]",
+                "status":"uid",
+                "post":"set status to Closed [wontfix]"
+            },
+            {
+                "poster":"0000-0004 [dev]",
+                "status":"uid",
+                "post":"says: Just don't bother at this point"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: any minute now?"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: anything?"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: a screenshot?"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: can we have a log?"
+            },
+            {
+                "poster":"531a-9390",
+                "status":"uid",
+                "post":"thread created"
+            }
+        ]
+    }
+}

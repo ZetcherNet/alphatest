@@ -1,0 +1,59 @@
+.container {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+.section {
+    width: 87%;
+    margin-left: 12.5%;
+}
+.banner {
+    width: 75%;
+    margin: auto;
+    background-image: url("../../assets/top-bg.png");
+    background-size: auto 100%;
+    padding: 8px;
+}
+.version {
+    display: block;
+    text-decoration: none;
+    font-size: 28px;
+    text-shadow: none;
+}
+.build {
+    display: block;
+    text-decoration: none;
+    padding-top: 16px;
+    text-shadow: none;
+}
+.links {
+    width: 75%;
+    margin: auto;
+    background-image: url("../../assets/nav-bg.png");
+    padding: 8px;
+}
+.links * {
+    display: inline;
+}
+.links a {
+    color: orange;
+}
+.page-title {
+    font-size: 24px;
+}
+.page-key {
+    font-size: 24px;
+    color: #FFFFFFA0;
+    font-style: italic;
+    text-decoration: underline;
+}
+.disclaimer {
+    color: #FFFFFFA0;
+    font-style: italic;
+    text-decoration: underline;
+}
+.section a {
+    color: orange;
+}
+.section ul {
+    margin-left: 16px;
+}

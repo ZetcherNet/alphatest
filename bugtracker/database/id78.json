@@ -1,0 +1,36 @@
+{
+    "report":"#0078",
+    "title":"Audio not working in the hub",
+    "author":"0000-0001 [dev]",
+    "status":"uid",
+    "viewable":true,
+    "page":{
+        "status":"Resolved",
+        "information":"when entering hub, audio doesn't work",
+        "attachments":[
+            {
+                "youtube":false,
+                "file":"78.txt",
+                "name":"log.txt",
+                "size":"525KB"
+            }
+        ],
+        "comments":[
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"set status to Resolved"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"set status to Accepted"
+            },
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"thread created"
+            }
+        ]
+    }
+}

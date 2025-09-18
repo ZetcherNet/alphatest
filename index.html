@@ -3,115 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <script src="./global.js"></script>
+    <script src="./login.js"></script>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Extension 16.05</title>
 </head>
-<body onload="js(0)">
+<body onload="auth();login();">
     <header>
-        <div class="top">
-            <div class="wrap">
-                <div class="logo">
-                    <a class="acc" href="">
-                        <img src="./assets/logo_small.png" alt="MINECRAFT">
-                    </a>
-                </div>
-                <div class="subtitle">
-                    <p>Extension 16.05</p>
-                </div>
-                <div class="account">
-                    <div id="identity">
-                        <a class="acc" href="">[Guest]</a>
-                    </div>
-                    <div id="anonymous">
-                        <a class="acc" href="">[Login]</a>
-                        <a class="acc" href="">[Register]</a>
-                    </div>
-                </div>
+        <hgroup>
+            <a href="./"><img class="site-logo" src="./assets/logo_small.png" alt="MINECRAFT"></a>
+            <div class="site-buttons">
+                <a target="_blank" href="./redirect/refactored"><img src="https://placehold.co/88x31.png" title="Check out Refactored!" alt="Refactored" width="88" height="31"></a>
+                <a target="_blank" href="./redirect/discord"><img src="./assets/88x31_discord.png" title="Join our Discord Server" alt="Discord Server" width="88" height="31"></a>
+                <a target="_blank" href="https://alphaver.neocities.org"><img src="./assets/88x31_communityhub.png" title="Visit our Sister Site" alt="Community Hub" width="88" height="31"></a>
+                <a target="_blank" href="https://zetcher.net"><img src="./assets/88x31_zetchernet.png" title="Hosted by ZetcherNet" alt="zetcher.net" width="88" height="31"></a>
             </div>
-        </div>
-        <div class="wrap">
-            <div id="menu">
-            </div>
-        </div>
+        </hgroup>
+        <nav>
+            <div class="site-subtitle"><a href="./">Extension 16.05</a></div>
+            <a href="./about">About</a>
+            <a href="./profile" class="site-profile">Profile</a>
+            <a href="./releases">Releases</a>
+            <a href="./decraft">Launcher</a>
+            <a href="./bugtracker">Bugtracker</a>
+            <a href="./faq">FAQ</a>
+            <a href="./lilypedia">Wiki</a>
+        </nav>
     </header>
     <main>
-        <div class="wrap">
-            <div id="anonViewers" style="display:none;">
-                <img style="max-width:753px;" src="./assets/logo.png" alt="MINECRAFT">
-                <h1>Extension 16.05</h1>
-                <br><br>
-                <p>Minecraft Alpha [Latest]: <a class="a" href="">Login</a> | <a class="a" href="">Register</a></p>
-                <p>Minecraft Preview [Demo]: <a class="a" target="_blank" href="">Download</a></p>
-            </div>
-            <div id="accountViewers" style="display:none;">
-                <table class="index-table">
+        <div class="container">
+            <div class="top-content">
+                <table class="table">
                     <tbody>
-                        <th class="index-left">
+                        <th class="left">
                             <video src="./embed/Trailer.mp4" controls="" title="Game Trailer"></video>
                         </th>
-                        <th class="index-right">
+                        <th class="right">
                             <img src="./assets/animals.png">
                             <a class="a" href=""><button>Play Now!</button></a>
                         </th>
                     </tbody>
                 </table>
                 <br><br>
+                <p>Log in with your Minecraft Playtester ID.</p>
+                <br>
+                <div class="login-box login">
+                    <div id="connecting" style="display:block;">
+                        <p id="connext">Connecting...</p>
+                    </div>
+                    <div id="success" style="display:none;">
+                        <div id="login-screen" style="display:block;">
+                            <p>Playtester ID: <input id="i1" size="4" maxlength="4"></input>-<input id="i2" size="4" maxlength="4"></input></p>
+                            <p>Password: <input id="i3"></input></p>
+                            <br>
+                            <button onclick="playtesterAuth()">Login</button>
+                            <p id="login-error" style="color:red;"></p>
+                        </div>
+                        <div id="login-process" style="display:none;">
+                            <p id="loggext">Logging in...</p>
+                        </div>
+                    </div>
+                    <div id="failed" style="display:none;">
+                        <p>Unable to connect to main servers.</p>
+                        <p>Try refreshing the page.</p>
+                    </div>
+                </div>
+                <br><br>
                 <p>Extension 16.05 brings you a new Minecraft experience.</p>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">BUILD</h1>
-                    <p class="index-promo">using the newest blocks.</p>
-                    <img class="index-promo-img" src="./assets/img0.png">
+            </div>
+            <div class="content">
+                <div class="section">
+                    <p class="promo-big">BUILD</p>
+                    <p class="promo">using the newest blocks.</p>
+                    <img class="promo-img" src="./assets/img0.png">
                 </div>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">SURVIVE</h1>
-                    <p class="index-promo">utilizing new items to help you make it through the night.</p>
-                    <img class="index-promo-img" src="./assets/img1.png">
+                <div class="section">
+                    <p class="promo-big">SURVIVE</p>
+                    <p class="promo">utilizing new items to help you make it through the night.</p>
+                    <img class="promo-img" src="./assets/img1.png">
                 </div>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">EXPLORE</h1>
-                    <p class="index-promo">the world to see and find many new materials and events! Sky's the limit!</p>
-                    <img class="index-promo-img" src="./assets/img2.png">
+                <div class="section">
+                    <p class="promo-big">EXPLORE</p>
+                    <p class="promo">the world to see and find many new materials and events! Sky's the limit!</p>
+                    <img class="promo-img" src="./assets/img2.png">
                 </div>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">DISCOVER</h1>
-                    <p class="index-promo">places unknown! Uncover traces of a once lost world only known in ancient writings!</p>
-                    <img class="index-promo-img" src="./assets/img3.png">
+                <div class="section">
+                    <p class="promo-big">DISCOVER</p>
+                    <p class="promo">places unknown! Uncover traces of a once lost world only known in ancient writings!</p>
+                    <img class="promo-img" src="./assets/img3.png">
                 </div>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">CONNECT</h1>
-                    <p class="index-promo">with players from all over the world via the mysterious doors that may appear in the world!</p>
-                    <img class="index-promo-img" src="./assets/img4.png">
+                <div class="section">
+                    <p class="promo-big">CONNECT</p>
+                    <p class="promo">with players from all over the world via the mysterious doors that may appear in the world!</p>
+                    <img class="promo-img" src="./assets/img4.png">
                 </div>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">FIGHT</h1>
-                    <p class="index-promo">new and horrifying creatures that will pose a challenge to even the best Minecraft players!</p>
-                    <img class="index-promo-img" src="./assets/img5.png">
+                <div class="section">
+                    <p class="promo-big">FIGHT</p>
+                    <p class="promo">new and horrifying creatures that will pose a challenge to even the best Minecraft players!</p>
+                    <img class="promo-img" src="./assets/img5.png">
                 </div>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">RACE</h1>
-                    <p class="index-promo">against the clock! Compete in thrilling parkour challenges to unlock surprises!</p>
-                    <img class="index-promo-img" src="./assets/img6.png">
+                <div class="section">
+                    <p class="promo-big">RACE</p>
+                    <p class="promo">against the clock! Compete in thrilling parkour challenges to unlock surprises!</p>
+                    <img class="promo-img" src="./assets/img6.png">
                 </div>
                 <br><br>
-                <div class="l">
-                    <h1 class="index-promo-big">HOLD</h1>
-                    <p class="index-promo">off and stand your ground against waves of enemy zombies! You might need to upgrade your gear.</p>
-                    <img class="index-promo-img" src="./assets/img7.png">
+                <div class="section">
+                    <p class="promo-big">HOLD</p>
+                    <p class="promo">off and stand your ground against waves of enemy zombies! You might need to upgrade your gear.</p>
+                    <img class="promo-img" src="./assets/img7.png">
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="revision">rev20<br><pre style="font-family:monospace;">▄ ▄ ▄<br>█▄▄▄█</pre></div>
+        <div class="revision">rev20<br><pre>🬓🬹🬦<br>🬲🬰🬷</pre></div>
         <div class="copyright">©Zetcher | ©Devoid<br>Not affiliated with Mojang or Microsoft</div>
     </footer>
 </body>

@@ -1,0 +1,27 @@
+.container {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    text-align: center;
+}
+.section {
+    text-align: left;
+    width: 87%;
+    margin-left: 12.5%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.q {
+    font-size: 32px;
+}
+.a {
+    color: #FFFFFFA0;
+    text-decoration: underline;
+    font-style: italic;
+}
+@media screen and (orientation: portrait) {
+    .section {
+        text-align: center;
+        width: 95%;
+        margin-left: 0%;
+    }
+}

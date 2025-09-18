@@ -1,0 +1,42 @@
+{
+    "report":"#0079",
+    "title":"Items in ID Input mode showing up as INVALID",
+    "author":"0000-0001 [dev]",
+    "status":"uid",
+    "viewable":true,
+    "page":{
+        "status":"Resolved",
+        "information":"entering a valid ID of an item makes INVALID show up anyway",
+        "attachments":[
+            {
+                "youtube":false,
+                "file":"79.txt",
+                "name":"log.txt",
+                "size":"467KB"
+            },
+            {
+                "youtube":false,
+                "file":"79.jpeg",
+                "name":"screenshot.jpeg",
+                "size":"1.47MB"
+            }
+        ],
+        "comments":[
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"set status to Resolved"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"set status to Accepted"
+            },
+            {
+                "poster":"0000-0001 [dev]",
+                "status":"uid",
+                "post":"thread created"
+            }
+        ]
+    }
+}

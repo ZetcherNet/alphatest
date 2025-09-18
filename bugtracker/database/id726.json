@@ -1,0 +1,46 @@
+{
+    "report":"#0726",
+    "title":"parts of world rearrange themself",
+    "author":"19ba-50f3",
+    "status":"uid",
+    "viewable":true,
+    "page":{
+        "status":"Resolved",
+        "information":"IDK how to explain this but late at night IRL all the chunks ive built my base at just suddenly split and went all over the place, whats going on??",
+        "attachments":[
+            {
+                "youtube":false,
+                "file":"726.png",
+                "name":"screenshot.png",
+                "size":"659KB"
+            }
+        ],
+        "comments":[
+            {
+                "poster":"0000-0000 [dev]",
+                "status":"uid",
+                "post":"says: Fixed as part of Lilypad"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"set status to Resolved"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: nvm found it"
+            },
+            {
+                "poster":"0000-0006 [dev]",
+                "status":"uid",
+                "post":"says: mind giving us a log?"
+            },
+            {
+                "poster":"19ba-50f3",
+                "status":"uid",
+                "post":"thread created"
+            }
+        ]
+    }
+}
