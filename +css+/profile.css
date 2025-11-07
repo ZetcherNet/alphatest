@@ -1,0 +1,72 @@
+article {
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    max-width: 740px;
+    background-color: #000000B0;
+}
+article section {
+    margin: 16px 16px 16px 16px;
+}
+.protitle, .delete {
+    text-align: center;
+}
+.card {
+    display: flex;
+}
+.stats {
+    flex: 3;
+}
+.stat {
+    margin: 16px 0 16px 0;
+}
+.data {
+    font-style: italic;
+    color: #FFFFFFB0;
+}
+.inline * {
+    display: inline;
+    vertical-align: middle;
+}
+.probutton {
+    background-color: #006a;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    padding-left: 4px;
+    padding-right: 4px;
+    outline: 2px solid black;
+    box-shadow: 2px 2px inset black, -2px -2px inset black;
+}
+.probutton:hover {
+    color: #ff6;
+    background-color: #004040bf;
+    border-top: 2px solid lightblue;
+    border-left: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+    cursor: pointer;
+}
+.warning {
+    font-size: 8px;
+    text-decoration: underline;
+    color: #FFFFFFB0;
+}
+.skin {
+    flex: 1;
+}
+.skin img {
+    width: 100%;
+}
+.why {
+    cursor: help;
+}
+input {
+    color: black;
+    cursor: text;
+    text-shadow: none;
+}
+.error-text {
+    color: red;
+}

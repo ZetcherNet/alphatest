@@ -1,0 +1,36 @@
+.login-page-container {
+    text-align: center;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+.login-box {
+    width: 50%;
+    margin: auto;
+    background-color: #000000B0;
+    padding: 25px;
+}
+.login input {
+    color: black;
+    text-shadow: none;
+    cursor: text;
+}
+.login button {
+    background-color: #006a;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 4px;
+    outline: 2px solid black;
+    box-shadow: 2px 2px inset black, -2px -2px inset black;
+}
+.login button:hover {
+    color: #ff6;
+    background-color: #004040bf;
+    border-top: 2px solid lightblue;
+    border-left: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+body {
+    background-image: none;
+    background-color: black;
+}
+main * {
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+.background {
+    position: fixed;
+    background-image: linear-gradient(45deg, #2f2f2f, #2f2f2f, black, black, #2f2f2f);
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    text-align: center;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+.decraft-logo img {
+    display: inline;
+}
+.decraft-logo p {
+    display: inline;
+    vertical-align: top;
+    font-size: 64px;
+}

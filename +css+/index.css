@@ -1,0 +1,179 @@
+article {
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    max-width: 740px;
+}
+article button {
+    color: white;
+    text-decoration: none;
+    background-color: #006a;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    outline: 2px solid black;
+    box-shadow: 2px 2px inset black, -2px -2px inset black;
+}
+article button * {
+    cursor: pointer;
+}
+article button:hover {
+    color: #ff6;
+    background-color: #004040bf;
+    border-top: 2px solid lightblue;
+    border-left: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+}
+aside {
+    position: fixed;
+    background-image: url("../+db+/nav-bg.png");
+    width: 192px;
+    height: 576px;
+    box-shadow: 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black;
+    top: calc(50% + 32px);
+    transform: translateY(-50%);
+}
+.left {
+    left: 128px;
+}
+.right {
+    right: 128px;
+}
+.divider {
+    background-image: url("../+db+/nav-bg.png");
+    height: 32px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+.divider p {
+    color: yellow;
+    text-shadow: 2px 2px #3f3f00;
+    font-size: 24px;
+    line-height: 32px;
+}
+.divider-mini {
+    background-image: url("../+db+/nav-bg.png");
+    height: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.divider-mini p {
+    font-size: 12px;
+    line-height: 16px;
+}
+.divider-mega {
+    background-image: url("../+db+/nav-bg.png");
+    height: 128px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.top-section, .movie-section {
+    display: flex;
+}
+.logo {
+    flex: 2;
+}
+.title {
+    width: 100%;
+}
+.subtitle {
+    text-align: center;
+    font-size: 24px;
+    margin-top: -16px;
+}
+.usercontent {
+    flex: 1;
+}
+.profile-url {
+    text-align: center;
+}
+.storage-buttons {
+    display: flex;
+}
+.storage-buttons > a {
+    flex: 1;
+    margin: 8px;
+}
+.storage-buttons > a * {
+    cursor: pointer;
+}
+.userbutton {
+    width: 100%;
+    text-align: center;
+}
+.userbutton img {
+    margin: auto;
+    display: block;
+    width: 48px;
+}
+.trailer {
+    flex: 3;
+}
+.trailer video {
+    width: 100%;
+}
+.squad {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.squad img {
+    width: 100%;
+}
+.squad button {
+    font-size: 24px;
+    padding: 4px;
+    cursor: pointer;
+}
+.navigation-section, .archive-section, .buttons-section {
+    text-align: center;
+}
+.navigation-section a, .archive-section a {
+    text-decoration: none;
+}
+.navibutton {
+    display: inline;
+    cursor: pointer;
+}
+.navibutton * {
+    display: inline;
+}
+.navibutton p {
+    vertical-align: 8px;
+}
+.buttons-section img {
+    cursor: pointer;
+}
+@media screen and (max-height: 644px) {
+    aside {
+        display: none;
+    }
+}
+@media screen and (max-width: 1479px) {
+    .left {
+        left: 64px;
+    }
+    .right {
+        right: 64px;
+    }
+}
+@media screen and (max-width: 1299px) {
+    .left {
+        left: 32px;
+    }
+    .right {
+        right: 32px;
+    }
+}
+@media screen and (max-width: 1219px) {
+    aside {
+        display: none;
+    }
+}

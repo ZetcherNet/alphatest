@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "ext1605";
+    src: url("../+db+/ext1605.woff");
+}
+@font-face {
+    font-family: "revision";
+    src: url("../+db+/revision.woff");
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "ext1605";
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    text-shadow: 3px 3px black;
+    overflow-x: hidden;
+    cursor: default;
+}
+a {
+    cursor: pointer;
+}
+body {
+    background-image: url("../+db+/bg.png");
+}
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 64px;
+    background-image: url("../+db+/");
+    border-bottom: 3px solid black;
+}
+.header-t1-1 {
+    width: 270px;
+    background-image: url("../+db+/top-1.png");
+}
+.header-t1-1 a, .header-t1-1 img, .header-t1-1 p {
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-t1-1 p {
+    text-align: center;
+    margin-top: -8px;
+}
+.header-t1-2 {
+    width: 48px;
+    background-image: url("../+db+/top-2.png");
+}
+.header-t1-3 {
+    width: calc(100% - 318px);
+    background-image: url("../+db+/top-3.png");
+    display: flex;
+    flex-direction: column;
+}
+.header-t2-1, .header-t2-2 {
+    flex: 1;
+    line-height: 32px;
+    white-space: nowrap;
+}
+.header-t2-1 *, .header-t2-2 * {
+    display: inline;
+}
+.header-t2-2 * {
+    color: orange;
+}
+.header-t2-1 .ico, .header-t2-2 .ico {
+    display: none;
+    /*display: inline-block;*/
+    width: 32px;
+    height: 32px;
+    background-image: url("../+db+/ico.png");
+}
+
+footer * {
+    font-family: ＭＳ Ｐゴシック;
+    color: #a0a0a040;
+    text-align: center;
+}
+.revision {
+    position: fixed;
+    bottom: 0;
+}
+.revision pre {
+    font-family: "revision";
+}
+.copyright {
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (max-width: 740px) {
+    [data-page]:not([data-page="profile"]) {
+        display: none;
+    }
+    .header-t2-1, .header-t2-2 {
+        line-height: normal;
+    }
+    .header-t2-1 *, .header-t2-2 * {
+        vertical-align: middle;
+    }
+    .header-t2-1 .ico, .header-t2-2 .ico {
+        display: inline-block;
+    }
+}

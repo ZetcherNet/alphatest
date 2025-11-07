@@ -1,0 +1,117 @@
+body {
+    background-image: none;
+    background-color: #f0f0f0;
+}
+main * {
+    color: black;
+    font-family: "Arial";
+    text-shadow: none;
+    margin: revert;
+    padding: revert;
+}
+.container {
+    margin: 8px;
+    margin-bottom: 64px;
+}
+h1 {
+  font-size: 56px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	display: inline-block;
+	font-style: italic;
+}
+main a {
+	color: blue;
+}
+li {
+	padding: 2px;
+	font-size: 14px;
+}
+.i {
+	font-style: italic;
+}
+.banner {
+    padding-left: 9px;
+    padding-bottom: 3px;
+    background-color: white;
+}
+.js-count, .js-index, .js-login {
+    margin: 0;
+}
+.content {
+	padding-left: 50px;
+}
+.status-update {
+	padding-bottom: 2px;
+	padding-top:0px;
+	padding-left: 2px;
+	background-color: #00000030;
+}
+.status-update p {
+    display: inline-block;
+}
+.uid {
+	display: inline-block;
+	font-style: italic;
+	font-family: "Arial";
+	border: gray solid 1.5px;
+	background: #00000060;
+	border-radius: 4px;
+	padding-left:1px;
+	padding-right:2px;
+	color: #ffffffA0;
+}
+.uid_ban {
+	display: inline-block;
+	font-style: italic;
+	font-family: "Arial";
+	border: gray solid 1.5px;
+	background: #00000030;
+	border-radius: 4px;
+	padding-left:1px;
+	padding-right:2px;
+	color: #ff0000D0;
+}
+.submitter, .status {
+    display: inline-block;
+    margin: 0%;
+}
+.file-attach {
+	display: inline-block;
+	font-style: italic;
+	font-family: "Arial";
+	border: gray solid 1.5px;
+	background: #ffffff60;
+	border-radius: 4px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	color: #000000A0;
+    margin-right: 4.45px;
+	width: 150px;
+}
+.embed-attach {
+	display: inline-block;
+	font-style: italic;
+	font-family: "Arial";
+	border: gray solid 1.5px;
+	background: #ffffff60;
+	border-radius: 4px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	color: #000000A0;
+    margin-right: 4.45px;
+}
+select, button {
+    color: revert;
+}
+.comment {
+	width: 392px;
+	height: 34px;
+}
