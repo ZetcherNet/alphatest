@@ -3,35 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../global.js"></script>
-    <script src="./bugtracker.js"></script>
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="./bugtracker.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../+css+/root.css">
+    <link rel="stylesheet" href="../+css+/bugtracker.css">
+    <script src="../+js+/root.js"></script>
+    <script src="../+js+/bugtracker.js"></script>
     <title>Bug Tracker</title>
+    <script>let index="bugtracker";</script>
 </head>
-<body onload="auth();display();">
-    <header>
-        <hgroup>
-            <a href="../"><img class="site-logo" src="../assets/logo_small.png" alt="MINECRAFT"></a>
-            <div class="site-buttons">
-                <a target="_blank" href="../redirect/refactored"><img src="https://placehold.co/88x31.png" title="Check out Refactored!" alt="Refactored" width="88" height="31"></a>
-                <a target="_blank" href="../redirect/discord"><img src="../assets/88x31_discord.png" title="Join our Discord Server" alt="Discord Server" width="88" height="31"></a>
-                <a target="_blank" href="https://alphaver.neocities.org"><img src="../assets/88x31_communityhub.png" title="Visit our Sister Site" alt="Community Hub" width="88" height="31"></a>
-                <a target="_blank" href="https://zetcher.net"><img src="../assets/88x31_zetchernet.png" title="Hosted by ZetcherNet" alt="zetcher.net" width="88" height="31"></a>
-            </div>
-        </hgroup>
-        <nav>
-            <div class="site-subtitle"><a href="../">Extension 16.05</a></div>
-            <a href="../about">About</a>
-            <a href="../profile" class="site-profile">Profile</a>
-            <a href="../releases">Releases</a>
-            <a href="../decraft">Launcher</a>
-            <p>Bugtracker</p>
-            <a href="../faq">FAQ</a>
-            <a href="../lilypedia">Wiki</a>
-        </nav>
-    </header>
+<body onload="i('.','sub');display();">
+    <header></header>
     <main>
         <div class="container">
             <div class="banner">
@@ -46,9 +27,6 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="revision">rev20<br><pre>🬓🬹🬦<br>🬲🬰🬷</pre></div>
-        <div class="copyright">©Zetcher | ©Devoid<br>Not affiliated with Mojang or Microsoft</div>
-    </footer>
+    <footer></footer>
 </body>
 </html>

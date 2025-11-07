@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./global.js"></script>
-    <script src="./profile.js"></script>
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./profile.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./+css+/root.css">
+    <link rel="stylesheet" href="./+css+/profile.css">
+    <script src="./+js+/root.js"></script>
+    <script src="./+js+/localbase.js"></script>
+    <script src="./+js+/profile.js"></script>
     <title>Extension 16.05</title>
+    <script>let index="profile";</script>
 </head>
-<body onload="auth();set();">
-    <header>
-        <hgroup>
-            <a href="./"><img class="site-logo" src="./assets/logo_small.png" alt="MINECRAFT"></a>
-            <div class="site-buttons">
-                <a target="_blank" href="./redirect/refactored"><img src="https://placehold.co/88x31.png" title="Check out Refactored!" alt="Refactored" width="88" height="31"></a>
-                <a target="_blank" href="./redirect/discord"><img src="./assets/88x31_discord.png" title="Join our Discord Server" alt="Discord Server" width="88" height="31"></a>
-                <a target="_blank" href="https://alphaver.neocities.org"><img src="./assets/88x31_communityhub.png" title="Visit our Sister Site" alt="Community Hub" width="88" height="31"></a>
-                <a target="_blank" href="https://zetcher.net"><img src="./assets/88x31_zetchernet.png" title="Hosted by ZetcherNet" alt="zetcher.net" width="88" height="31"></a>
-            </div>
-        </hgroup>
-        <nav>
-            <div class="site-subtitle"><a href="./">Extension 16.05</a></div>
-            <a href="./about">About</a>
-            <p class="site-profile" style="color:white;">Profile</p>
-            <a href="./releases">Releases</a>
-            <a href="./decraft">Launcher</a>
-            <a href="./bugtracker">Bugtracker</a>
-            <a href="./faq">FAQ</a>
-            <a href="./lilypedia">Wiki</a>
-        </nav>
-    </header>
+<body onload="i();set();">
+    <header></header>
     <main>
-        <div class="container">
-            <p>Profile Settings</p>
-            <br><br>
-            <div class="profile-box">
-                <p>Username: <span class="set-username"><button onclick="setup()">Login</button></span></p>
-                <p>QA Key: <span class="set-qa">N/A</span></p>
-                <p>Playtester ID: <span class="set-id"><a href="./login"><button>Login</button></a></span></p>
-                <br>
-                <p>Account Status: <span class="acc-status">Unregistered Account</span> <span class="why" title="You are ineligible for download access to our releases.">[?]</span></p>
-                <div class="delete-data">
-                    <br><br><br><br>
-                    <button onclick="reset()">Delete Saved Data</button>
-                    <p>Warning: This action is irreversible!</p>
+        <article>
+            <section class="protitle">
+                <p>User Profile</p>
+            </section>
+            <section class="card">
+                <div class="stats">
+                    <div class="stat">
+                        <p>Username:</p>
+                        <p class="data set-username"><button class="probutton" onclick="setup()">Login</button></p>
+                    </div>
+                    <div class="stat">
+                        <p>QA Key:</p>
+                        <p class="data set-qa">N/A</p>
+                    </div>
+                    <div class="stat">
+                        <p>Playtester ID:</p>
+                        <p class="data set-id"><a href="./login"><button class="probutton">Login</button></a></p>
+                    </div>
+                    <br>
+                    <div class="stat">
+                        <p>Total Skins Saved:</p>
+                        <div class="inline">
+                            <p class="data set-skin">0</p>
+                            <!--<button class="probutton">Delete Skin Data</button>-->
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Total Visuals Saved:</p>
+                        <div class="inline">
+                            <p class="data set-visual">0</p>
+                            <!--<button class="probutton">Delete Visual Data</button>-->
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Total Demos Saved:</p>
+                        <div class="inline">
+                            <p class="data set-demo">0</p>
+                            <!--<button class="probutton">Delete Demo Data</button>-->
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div class="skin">
+                    <img class="data set-avatar" src="./+db+/placeholder_skin.png">
+                </div>
+            </section>
+            <section class="delete">
+                <button class="probutton" onclick="reset()">Delete Saved Data</button>
+                <p class="warning">Warning: This action is irreversible!</p>
+            </section>
+        </article>
     </main>
-    <footer>
-        <div class="revision">rev20<br><pre>🬓🬹🬦<br>🬲🬰🬷</pre></div>
-        <div class="copyright">©Zetcher | ©Devoid<br>Not affiliated with Mojang or Microsoft</div>
-    </footer>
+    <footer></footer>
 </body>
 </html>

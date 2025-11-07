@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./+css+/root.css">
+    <link rel="stylesheet" href="./+css+/skins.css">
+    <script src="./+js+/root.js"></script>
+    <script src="./+js+/localbase.js"></script>
+    <script src="./+js+/skins.js"></script>
+    <title>Extension 16.05</title>
+    <script>let index="skins";</script>
+</head>
+<body onload="i();s();">
+    <header></header>
+    <main>
+        <div class="upload-screen">
+            <div class="popup-menu">
+                <div class="poptop">
+                    <p>Uplaod/Convert Skin</p>
+                    <p onclick="hideUpload();">[X]</p>
+                </div>
+                <div class="upload">
+                    <input type="file" id="file" accept="image/png" onchange="u();">
+                </div>
+                <div class="display-new-preview">
+                    <div class="overview">
+                        <div class="upload-atlas">
+                            <img width="196" height="196" src="./+db+/example_skin_old.png" class="upload-old">
+                            <img width="196" height="96" src="./+db+/example_skin_new.png" class="upload-new">
+                        </div>
+                        <img width="72" height="288" src="./+db+/example_skin_left.png" class="upload-left">
+                        <img width="144" height="288" src="./+db+/example_skin_front.png" class="upload-front">
+                        <img width="72" height="288" src="./+db+/example_skin_right.png" class="upload-right">
+                        <img width="144" height="288" src="./+db+/example_skin_back.png" class="upload-back">
+                    </div>
+                    <div class="upload-metadata">
+                        <label>Skin Username: <input class="upload-input upl-user" type="text" maxlength="14" size="14"></label>
+                        <br>
+                        <label class="tiny">Set as Profile's Skin?: <input class="upload-check upl-prof" type="checkbox"></label>
+                        <br>
+                        <label>Description<br><textarea class="upload-input upl-desc" rows="5" cols="50"></textarea></label>
+                    </div>
+                    <button onclick="createSkin();">Save Skin</button>
+                </div>
+            </div>
+        </div>
+        <div class="view-skin-screen">
+            <div class="popup-menu">
+                <div class="poptop">
+                    <p>View Skin</p>
+                    <p onclick="hideView();">[X]</p>
+                </div>
+                <br>
+                <div class="display-stored-overview">
+                    <img width="72" height="288" src="./+db+/example_skin_left.png" class="stored-left">
+                    <img width="144" height="288" src="./+db+/example_skin_front.png" class="stored-front">
+                    <img width="72" height="288" src="./+db+/example_skin_right.png" class="stored-right">
+                    <img width="144" height="288" src="./+db+/example_skin_back.png" class="stored-back">
+                </div>
+                <br>
+                <div class="display-stored-metadata">
+                    <div class="stored-textarea">
+                        <p>Name: </p><p class="stored-metadata"></p>
+                    </div>
+                    <p class="stored-metadata">Uploader:</p>
+                    <p>Description:</p>
+                    <div class="stored-textarea">
+                        <p class="stored-metadata"></p>
+                    </div>
+                </div>
+                <a class="stored-skin-action" download="" href=""><button>Download Skin</button></a>
+                <br>
+                <button class="stored-skin-action">Share Skin</button>
+                <button class="stored-skin-action">Set as Profile's Skin</button>
+                <br>
+                <a class="stored-skin-action important-button" download="" href=""><button>Download Data</button></a>
+                <button class="stored-skin-action important-button">Delete Skin</button>
+            </div>
+        </div>
+        <button class="menu-buttons" onclick="displayUpload();">Upload/Convert Skin</button>
+        <br><br>
+        <p>Saved Skins</p>
+        <article>
+            <p  class="empty">No Data</p>
+        </article>
+        <br><br>
+        <button class="menu-buttons">Download All Skin Data</button>
+        <button class="menu-buttons">Delete All Skin Data</button>
+    </main>
+    <footer></footer>
+</body>
+</html>
