@@ -1,0 +1,67 @@
+.switcher {
+    display: none;
+}
+.freerun {
+    text-align: center;
+    padding-top: 4px;
+}
+.category {
+    display: inline-block;
+    width: 350px;
+    border: 2px solid black;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 4px;
+    vertical-align: top;
+}
+.thumbnail {
+    height: 96px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cat-title {
+    background-image: url("../!db/site-window.png");
+    background-size: 100% 100%;
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.run-reference {
+    font-size: 0;
+}
+.run-reference p {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 12px;
+    color: gray;
+    text-shadow: 2px 2px 0 black;
+}
+.fr-name {
+    width: 150px;
+}
+.fr-time {
+    width: 100px;
+}
+.fr-file {
+    width: 100px;
+}
+.entry {
+    font-size: 0;
+    border-top: 1px solid black;
+}
+.entry * {
+    display: inline-block;
+    padding-bottom: 2px;
+    font-weight: 900;
+    font-size: 10px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+.entry a {
+    color: #ff6;
+    text-decoration: none;
+    cursor: pointer;
+}

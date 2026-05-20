@@ -1,0 +1,204 @@
+:root {
+    --banner-bg: url("../!db/site-banner-bg.png");
+}
+@font-face {
+    font-family: "ext1605";
+    src: url("../!db/ext1605.woff");
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    scrollbar-width: thin;
+}
+body {
+    background-color: black;
+}
+.background {
+    position: fixed;
+    background-image: url("../!db/site-banner-bg-overlay.png"), var(--banner-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(16px);
+    opacity: .5;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+}
+.container {
+    position: relative;
+    max-width: 724px;
+    margin: auto;
+    box-shadow: 0px 0px 16px black;
+}
+.site-login {
+    position: relative;
+    height: 16px;
+    background-color: black;
+    background-image: url("../!db/site-login.png");
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.site-login * {
+    display: inline;
+    color: white;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.forum-login {
+    position: absolute;
+    right: 0;
+}
+.forum-login-input {
+    height: 8px;
+    color: black;
+    border: 1px solid black;
+    padding: 1px;
+    cursor: text;
+}
+.forum-login-button {
+    height: 12px;
+    font-size: 7px;
+    font-weight: 900;
+    color: black;
+    border: 1px solid black;
+    padding: 0 1px 0 1px;
+    cursor: pointer;
+}
+.site-banner {
+    position: relative;
+    height: 128px;
+    background-color: #00007f;
+    background-image: url("../!db/site-banner-filter.png"), url("../!db/site-banner-bg-overlay.png"), var(--banner-bg);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.site-logo {
+    position: absolute;
+    left: 0;
+    width: 194px;
+    height: 128px;
+    background-image: url("../!db/site-logo.png");
+}
+.link-home {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+}
+.site-flash {
+    position: absolute;
+    right: 0;
+    width: 148px;
+    height: 128px;
+    background-image: url("../!db/site-flash.png");
+}
+.site-links-1, .site-links-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.site-links-1 {
+    margin-left: 194px;
+}
+.site-links-2 {
+    margin-left: 186px;
+    margin-bottom: 16px;
+}
+.site-links-1 *, .site-links-2 * {
+    display: inline;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 black;
+}
+.site-links-1 a, .site-links-2 a {
+    cursor: pointer;
+}
+.site-links-1 * {
+    font-size: 13px;
+}
+.site-navigation {
+    height: 16px;
+    background-color: black;
+    background-image: url("../!db/site-navigation.png");
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.site-navigation * {
+    display: inline;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    vertical-align: top;
+}
+.site-navigation a {
+    text-decoration: none;
+    color: #ff6;
+    cursor: pointer;
+}
+article {
+    background-color: #4e545f;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.site-footer {
+    position: relative;
+    background-image: url("../!db/site-window.png");
+    background-size: 100% 100%;
+    margin: auto;
+    margin-bottom: 16px;
+    max-width: 724px;
+    border: 2px solid black;
+    border-top: 0;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+.site-footer a {
+    display: inline-block;
+    width: 80px;
+    height: 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 2px 0 2px 0;
+}
+.site-footer img {
+    cursor: pointer;
+}
+@media screen and (max-width:624px) {
+    .site-banner {
+        border-bottom: 42px solid black;
+    }
+    .site-links-1, .site-links-2 {
+        position: relative;
+        margin: 0;
+        text-align: center;
+    }
+    .site-links-1 {
+        padding-top: 128px;
+    }
+    .site-links-1 * {
+        font-size: 11px;
+    }
+    .site-links-2 * {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:600px) {
+    .site-login > p {
+        display: block;
+        text-align: center;
+    }
+    .forum-login {
+        display: none;
+    }
+}

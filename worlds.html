@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./+js+/$_SKINS.js"></script>
+    <script src="./+js+/$_WORLDS.js"></script>
     <link rel="stylesheet" href="./+css+/global.css">
-    <link rel="stylesheet" href="./+css+/skins.css">
+    <link rel="stylesheet" href="./+css+/worlds.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <title>Skins | Alphatest Network</title>
+    <title>Worlds | Alphatest Network</title>
 </head>
 <body>
     <div class="background"></div>
@@ -47,14 +47,29 @@
         </div>
         <div class="site-navigation">
             <a href="./">Alphatest Network</a><p> ></p>
-            <p>Skins</p>
+            <p>Worlds</p>
         </div>
         <article>
             <div class="switcher">
-                <button class="skins-tab" onclick="showSkinsByCategory(`fanmade`)">Fanmade</button>
-                <button class="skins-tab" onclick="showSkinsByCategory(`official`)">Official</button>
-                <button class="skins-tab" onclick="showSkinsByCategory(`file`)">All</button>
+                <button class="world-tab" onclick="showWorldByCategory(`singleplayer`)">Singleplayer</button>
+                <button class="world-tab" onclick="showWorldByCategory(`freerun`)">Freerun</button>
+                <button class="world-tab" onclick="showWorldByCategory(`zombies`)">Zombies</button>
             </div>
+            <!--
+                <table class="world">
+                    <tbody>
+                        <tr>
+                            <th class="world-left">
+                                <div class="world-title"><p>NAME</p><p>AUTHOR</p></div>
+                                <p class="world-desc">DESC</p>
+                                <p class="world-version">VERSION</p>
+                                <div class="world-download"><a href="">[Download]</a><p>(0MB)</p></div>
+                            </th>
+                            <th class="world-right"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            -->
         </article>
         <div class="site-footer">
             <a href="../"><img width="80" height="15" src="./!db/footer-button-zetchernet.png" alt="ZetcherNet" title="ZetcherNet"></a>
@@ -65,5 +80,5 @@
     </div>
 </body>
 <script src="./+js+/global.js"></script>
-<script src="./+js+/skins.js"></script>
+<script src="./+js+/worlds.js"></script>
 </html>

@@ -1,0 +1,90 @@
+.switcher {
+    text-align: center;
+}
+.world-tab {
+    width: 32%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-weight: 900;
+}
+.world {
+    width: 700px;
+    padding: 2px;
+    background-color: rgba(0,0,0,.5);
+    border: 2px solid black;
+    margin: auto;
+    margin-bottom: 8px;
+}
+.world-left {
+    width: calc(100% - 171px);
+}
+.world-title {
+    height: 32px;
+    text-align: left;
+}
+.world-title p {
+    display: inline;
+}
+.world-title p:first-child {
+    font-weight: 900;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+.world-title p:last-child {
+    font-size: 12px;
+    margin-left: 4px;
+    color: gray;
+    text-shadow: 2px 2px 0 black;
+}
+.world-desc {
+    min-height: 36px;
+    text-align: left;
+    font-size: 10px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+.world-version {
+    height: 16px;
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+.world-download {
+    height: 16px;
+}
+.world-download * {
+    display: inline;
+    font-size: 12px;
+}
+.world-download a {
+    font-weight: 900;
+    margin-right: 4px;
+    color: #ff6;
+    text-shadow: 2px 2px 0 black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.world-download p {
+    margin-left: 4px;
+    color: gray;
+    text-shadow: 2px 2px 0 black;
+}
+.world-right {
+    width: 171px;
+    background-size: 100% 100%;
+}
+@media screen and (max-width:744px) {
+    .world {
+        width: 98%;
+    }
+    .world-left {
+        width: 100%;
+    }
+    .world-right {
+        display: none;
+    }
+}

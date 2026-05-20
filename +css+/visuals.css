@@ -1,0 +1,94 @@
+.article-header {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+.file {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.visual {
+    position: relative;
+    width: 99%;
+    padding: 2px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.visual th:first-child {
+    vertical-align: top;
+}
+.pack-png {
+    display: block;
+    width: 64px;
+    object-fit: contain;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: optimizeSpeed;
+}
+.visual th:last-child {
+    width: 100%;
+}
+.visual-top * {
+    display: inline;
+}
+.visual-top {
+    height: 16px;
+    text-align: left;
+    line-height: 16px;
+    font-size: 12px;
+}
+.visual-author {
+    font-size: 10px;
+    margin-left: 4px;
+    color: gray;
+}
+.visual-badges {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 2px;
+    margin-right: 2px;
+    float: right;
+}
+.visual-featured {
+    width: 24px;
+    height: 24px;
+}
+.visual-middle {
+    font-size: 10px;
+    min-height: 30px;
+    text-align: left;
+}
+.visual-top, .visual-middle, .visual-bottom {
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+.visual-bottom {
+    height: 12px;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff6;
+}
+.switcher {
+    text-align: center;
+}
+.visual-tab {
+    width: 32%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-weight: 900;
+}
+@media screen and (max-width:744px) {
+    .file {
+        width: 100%;
+    }
+}
