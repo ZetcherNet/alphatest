@@ -8,7 +8,7 @@ const WORLD=
         "thumbnail":"lilypadqa_world2.png",
         "category":"singleplayer",
         "size":"2.9MB",
-        "file":"world/LilypadQA"
+        "file":"LilypadQA"
     },
     /*VvV~FREERUN~VvV*/
     {
@@ -19,7 +19,7 @@ const WORLD=
         "thumbnail":"freerun_introduction.png",
         "category":"freerun",
         "size":"10.2MB",
-        "file":"freerun/Introduction"
+        "file":"Introduction"
     },
     {
         "name":"Construct",
@@ -29,7 +29,7 @@ const WORLD=
         "thumbnail":"freerun_construct.png",
         "category":"freerun",
         "size":"6.2MB",
-        "file":"freerun/Construct"
+        "file":"Construct"
     },
     {
         "name":"Skyline",
@@ -39,7 +39,7 @@ const WORLD=
         "thumbnail":"freerun_skyline.png",
         "category":"freerun",
         "size":"20.2MB",
-        "file":"freerun/Skyline"
+        "file":"Skyline"
     },
     {
         "name":"Sorrow",
@@ -49,7 +49,7 @@ const WORLD=
         "thumbnail":"freerun_sorrow.png",
         "category":"freerun",
         "size":"10.1MB",
-        "file":"freerun/Sorrow"
+        "file":"Sorrow"
     },
     {
         "name":"Shiver",
@@ -59,7 +59,7 @@ const WORLD=
         "thumbnail":"freerun_shiver.png",
         "category":"freerun",
         "size":"5.4MB",
-        "file":"freerun/Shiver"
+        "file":"Shiver"
     },
     {
         "name":"Finale",
@@ -69,7 +69,7 @@ const WORLD=
         "thumbnail":"freerun_finale.png",
         "category":"freerun",
         "size":"10.1MB",
-        "file":"freerun/Finale"
+        "file":"Finale"
     },
     /*VvV~ZOMBIES~VvV*/
     {
@@ -80,7 +80,7 @@ const WORLD=
         "thumbnail":"zombies_ruinen.png",
         "category":"zombies",
         "size":"26.7MB",
-        "file":"zombies/[ZM]RuinenDerUntoten"
+        "file":"[ZM]RuinenDerUntoten"
     },
     {
         "name":"Metsan Talo",
@@ -90,6 +90,6 @@ const WORLD=
         "thumbnail":"zombies_metsan.png",
         "category":"zombies",
         "size":"6.9MB",
-        "file":"zombies/[ZM]MetsanTalo"
+        "file":"[ZM]MetsanTalo"
     },
 ];
